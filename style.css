@@ -1,0 +1,512 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+
+/* navbar*/
+
+.nav_style{
+    background: #ffffff;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+
+.navbar-brand img{
+    width: 200px;
+    height: 80px;
+}
+
+/*.img-fluid{
+    width: 100px;
+    height: 100px;
+}*/
+
+.navbar-collapse{
+    margin-left: 50%;
+}
+
+.navbar-nav li a{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    /*color: #ff7230;*/
+    color: #333;
+    position: relative;
+}
+
+.navbar-nav li a:before{
+    content:'';
+    position: absolute;
+    top: 100px;
+    bottom: 50%;
+    width: 0%;
+    height: 3%;
+    background: #ff7230;
+    transition: all 0.3 linear;
+}
+
+/*.navbar-nav li a:hover::before{
+    width: 80%;
+    margin-top: 5px;
+}*/
+
+.navbar-nav li a:hover{
+    color:#ff7230!important;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color:#ff7230!important;
+}
+
+@media(max-width:992px){
+    .navbar-nav{
+        margin-top: 40px !important;
+    }
+    .navbar-nav li a:hover::before{
+        width: 3%;
+    }
+    .navbar-brand img{
+        width: 50px;
+        height: 50px;
+
+    }
+    /*
+    .img-fluid{
+        width: 50px!important;
+        height: 30px;
+    }*/
+    .navbar-collapse{
+        margin-left: 0%;
+        text-align: center;
+    }
+}
+
+/* header style css*/
+.header_text{
+    font-size: 26px;
+    color: #8c8c8c;
+    margin-top: 90px;
+    margin-left: 90px;
+
+}
+
+.header_text2{
+    font-size: 26px;
+    color: #2d3436;
+    margin-bottom: 70px;
+    margin-left: 90px;
+
+}
+
+.span_header_text{
+    color: #ff7230;
+}
+
+.hire_me{
+    width: 160px;
+    height: 40px;
+    background: #ff7230;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    margin-left: 100px;
+    margin-right: 50px;
+
+}
+
+.about_me{
+    width: 160px;
+    height: 40px;
+    color: #ff7230;
+    font-size: 20px;
+    background: #ffffff;
+    text-transform: capitalize;
+    outline:none;
+    border: 1px solid #ff7230;
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+
+}
+
+.img_fluid{
+    margin-left: 200px;
+    margin-top: 50px;
+
+}
+
+.hire_me:hover{
+    background-color: #ffffff;
+    color: #ff7230;
+    border:1px solid #ff7230;
+}
+
+.about_me:hover{
+    background-color: #ff7230;
+    color: #ffffff;
+    border:1px solid #ffffff;
+}
+
+.header_mail p{
+    margin-top: 40px;
+    margin-left: 90px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.header_mail p:nth-child(2){
+    margin-top: -20px;
+}
+
+/*
+@media(max-width:992px){
+    .header_text, .header_text2{
+        font-size: 20px;
+    }
+
+}*/
+
+/*about us css*/
+.about_sec{
+    padding-top: 50px;
+}
+
+.about-img{
+    margin-right: 80px;
+}
+
+.main_title h1{
+    font-weight: 500;
+    font-size: 80px;
+    color: #000000;
+    text-transform: capitalize;
+    position: relative;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.about_text{
+    margin-top: -30px;
+    padding-left: 225px;
+}
+.about_text h1{
+font-size: 33px;
+color: #000000;
+margin-top: -20px;
+margin-bottom: 25px;
+}
+.about_text h2{
+    font-size: 24px;
+}
+.about_text p{
+    font-size: 20px;
+    color: #000000;
+}
+
+/*work exp css*/
+
+.expert-sec{
+    padding-top: 50px;
+
+}
+
+.main_title h1{
+    margin-left: 200px;
+}
+
+.main_title p{
+    text-align: center;
+    font-size: 26px;
+    color: #000000;
+    margin-left: 200px;
+}
+
+.common_div{
+    margin-top: 100px;
+}
+
+.expert-sec .progress{
+    width: 100%;
+    height: 7px;
+    border-radius: 5px;
+}
+
+.expert-sec .pb_1{
+    width: 93%;
+    border-radius: 7px;
+    background-color: #ea2148;
+}
+
+.expert-sec .pb_2{
+    width: 83%;
+    border-radius: 7px;
+    background-color: #ff7230;
+}
+
+.expert-sec .pb_3{
+    width: 88%;
+    border-radius: 7px;
+    background-color:#1c9588;
+}
+
+.expert-sec h2{
+    position: relative;
+}
+
+.expert_h1::after{
+    content: '93%';
+    position: absolute;
+    top: 10px;
+    right: 13%;
+    font-size: 16px;
+    color: #000000;
+    font-size: 500;
+}
+
+
+.expert_h2::after{
+    content: '83%';
+    position: absolute;
+    top: 10px;
+    right: 13%;
+    font-size: 16px;
+    color: #000000;
+    font-size: 500;
+}
+
+.expert_h3::after{
+    content: '88%';
+    position: absolute;
+    top: 10px;
+    right: 13%;
+    font-size: 16px;
+    color: #000000;
+    font-size: 500;
+}
+
+/* our services */
+.ourservices{
+    padding-top:50px;
+    padding-bottom: 70px;
+}
+
+ .row_1{
+    margin-left:200px;
+}
+
+.services_div{
+    border-radius: ;
+    padding: 20px 10px 70px 10px;
+    margin-top: 50px;
+    transition:all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    position: relative;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+}
+
+.services_div:hover{
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 1px gray;
+}
+
+.services_div h1{
+    text-align: center;
+    font-size: 52px;
+    color: #ff7230;
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.services_div h1:hover{
+    background: #f8b89a;
+    border: 1px solid #ff7230;
+}
+
+.services_div .service_list_icon{
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+}
+
+.fa-dot-circle-o{
+    color: #ffeee6;
+    width: auto;
+}
+
+.fa-heart{
+    color: #eeafaf;
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+}
+
+
+.services_div:hover .fa-heart{
+    color:#dd8683
+}
+
+.services_div .col-lg-3 .cool-md-4 .col-10{
+    padding-right: 0px!important;
+    padding-bottom: 0px!important;
+}
+ 
+.services_div li{
+    font-size: 23px;
+    color: #000000;
+    font-weight: 300;
+    text-transform: capitalize;
+    padding-left: 5px;
+}
+
+.services_div li:first-child{
+    padding-top: 20px;
+}
+
+/*hire me*/
+.hireme-section{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/11.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.hireme-section h1{
+    font-size: 40px;
+    color: #ff7230;
+}
+
+.hireme-section p{
+    font-size: 30px;
+    color: #ffeee6;
+    letter-spacing: 3px;
+}
+
+.hireme-section h3{
+    font-size: 30px;
+    color: #ffffff;
+    margin-top: -10px;
+    padding-bottom: 30px;
+}
+
+/*contact us*/
+
+.contact-me{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+/*contact link*/
+
+.row_2{
+    margin-left:200px;
+    padding-left: 50px;
+}
+
+.contact_share_div{
+    width: 25%;
+    height: 150px;
+    align-content: center;
+    border-radius: 30px;
+    background: #f6f6f6;
+    transition: all 0.2s linear;
+    -webkit-transition: all 0.2s linear;    
+}
+
+.contact_share_div:hover{
+    border-radius: 30px;
+    background-color: #ffffff;
+    border: 1px solid #ff7230;
+    filter: drop-shadow(2px.0px.8px.rgba(0,.0,.0,.0.18))
+}
+
+.contact_share_div:hover .fas, .fab, .far{
+    color: #ff7230;
+}
+
+.contact_share_div p{
+    margin: 0;
+}
+
+/*
+@media(max-width:760px){
+    .contact_share_div:nth-child(2){
+        margin: 30px 0!important;
+    }
+}*/
+
+
+/*social link*/
+
+.fa-facebook-f, .fa-dribbble, .fa-instagram, .fa-pinterest,  .fa-behance{
+    color: #000000;
+} 
+
+.socialsite_links .fa-facebook-f:hover{
+    color: #ff7230;
+}
+
+.socialsite_links .fa-dribbble:hover{
+    color: #ff7230;
+}
+
+.socialsite_links .fa-instagram :hover{
+    color: #ff7230;
+}
+
+.socialsite_links .fa-pinterest:hover{
+    color: #ff7230;
+}
+
+.socialsite_links .fa-behance:hover{
+    color: #ff7230;
+}
+
+/*
+@media(max-width:760){
+    .socialsite_links{
+        margin-bottom: 20px;
+    }
+}*/
+
+
+/*footer*/
+footer{
+    width: 100%;
+    line-height: 50px;
+    background: #ff7230;
+    color: #ffffff;
+}
+
+footer p{
+    margin: 0;
+}
+
+/*responsive code*/
+/*
+@media(max-width:992px){
+    .main_title h1{
+        font-size: 40px;
+    }
+}*/
+
+
+
+
+
+
+
